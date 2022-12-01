@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:localpath/views/login/login_view.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: true,
+      home: MyApp(),
+    )
+  );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginView(),
     );
   }
 }
